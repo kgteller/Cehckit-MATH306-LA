@@ -25,7 +25,10 @@ Example of generating graphics.
             <slug>EX2</slug>
             <path>outcomes/EX2</path>
             <description>
-please work
+I can execute the next 2-3 steps of
+  Gaussian elimination by hand that are needed to work toward RREF
+  (and recognize that additional steps are needed to achieve RREF), and
+  identify which row operations were used.
             </description>
         </outcome>
     </outcomes>

@@ -23,7 +23,7 @@ Quick instructions:
 ```
 sage --python -m checkit generate  # add -ri to get images (slow)
 sage --python -m checkit viewer
-sage --python -m http.server -d docs
+sage -- 
 ```
 
 ## About CheckIt

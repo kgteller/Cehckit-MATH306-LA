@@ -1,20 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
    <knowl>
-    <introduction>
+    <intro>
         <p>
            A given linear system has been represented by an augmented
   matrix and Gaussian elimination has begun.  The current state of the
   process is shown below.
-  <md>
+  <m>
     {{A}}
-  </md>
-   
-        </p>
-    </introduction>
+  </m>
+    </p>
+    </intro>
+
+    <knowl>
+    <p>
+        Execute the next <alert> two </alert> row operations that you
+    would perform to continue the process of Gaussian elimination,
+    clearly stating your steps by writing the explicit row operations
+    you did.  You should write at least two additional matrices to
+    show your work.
+    </p>
+    </knowl>
     
     <outtro>
-        <p><m>{{result}}</m></p>
+    <p>
+        {{Arref}}
+    </p>
     </outtro>
     </knowl>
 </knowl>
