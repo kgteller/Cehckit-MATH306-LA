@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bank xmlns="https://checkit.clontz.org" version="0.2">
     <title>New CheckIt Bank</title>
-    <slug>new-checkit-bank</slug>
+    <slug>MATH 306 Linear Algebra</slug>
     <url>https://checkit.clontz.org</url>
     <outcomes>
         <outcome>
@@ -18,6 +18,14 @@ Simplify the sum of two monomials.
             <path>outcomes/IMG1</path>
             <description>
 Example of generating graphics.
+            </description>
+        </outcome>
+         <outcome>
+            <title>RREF</title>
+            <slug>EX2</slug>
+            <path>outcomes/EX2</path>
+            <description>
+please work
             </description>
         </outcome>
     </outcomes>
