@@ -9,6 +9,7 @@
   <md>
     {{A}}
   </md>
+
   
                 </p>
         </intro>
@@ -18,7 +19,7 @@
     would perform to continue the process of Gaussian elimination,
     clearly stating your steps by writing the explicit row operations
     you did.  You should write at least two additional matrices to
-    show your work.</me></p></content>
+    show your work.</p></content>
             <outtro>
                    <p>
                     <m>{{Row_Operations}}</m>
@@ -33,11 +34,5 @@
     operation you would execute to continue Gaussian elimination?
     Simply state the next row operation; you need not perform it.</content>
         <outtro><p><me>{{Arref}}</me></p></outtro>
-    </knowl>
-    <knowl>
-        <content><p>Without doing any further row operations, determine the number
-    of solutions that this system has and explain your thinking.
-        <me>\operatorname{RREF}{{A}}</me> without technology.</p></content>
-        <outtro><p><me>{{A}} \sim \cdots \sim {{Arref}}</me></p></outtro>
     </knowl>
 </knowl>
