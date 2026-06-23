@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<<?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <knowl>
         <intro>
@@ -25,12 +25,15 @@
                     
                    </p>     
             </outtro>
+    
         </knowl>
     </knowl>
+    <!-- 
     <knowl>
         <content><p>based on your final matrix, what would be the next row
     operation you would execute to continue Gaussian elimination?
     Simply state the next row operation; you need not perform it.</p></content>
         <outtro><p><me>{{Arref}}</me></p></outtro>
     </knowl>
+    -->
 </knowl>
