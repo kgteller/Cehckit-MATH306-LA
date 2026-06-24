@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+   <knowl>
+    <intro>
+        <p>
+           A given linear system has been represented by an augmented
+  matrix and Gaussian elimination has begun.  The current state of the
+  process is shown below.
+  <me>
+    {{A}}
+  </me>
+    </p>
+    </intro>
+
+    <knowl>
+    <content>
+    <p>
+        Execute the next two  row operations that you
+    would perform to continue the process of Gaussian elimination,
+    clearly stating your steps by writing the explicit row operations
+    you did.  You should write at least two additional matrices to
+    show your work.
+    </p>
+   
+     </content>
+    <outtro>
+    <p>
+        <me> {{Row_Op1}}</me>
+    </p>
+    </outtro>
+     </knowl>
+
+     <knowl>
+     <content>
+     <p>
+        Based on your final matrix, what would be the next row
+    operation you would execute to continue Gaussian elimination?
+    Simply state the next row operation; you need not perform it. 
+     </p>
+     </content>
+         <outtro>
+    <p>
+       <me> {{Row_Op2}}</me>
+    </p>
+    </outtro>
+     </knowl>
+
+     <knowl>
+     <content>
+     <p>
+         Without doing any further row operations, determine the number
+    of solutions that this system has and explain your thinking. 
+     </p>
+     </content>
+         <outtro>
+    <p>
+        {{nsolution}}
+        <me> {{Row_Operations}}</me>
+        <me>{{Arref}} </me>
+    </p>
+    </outtro>
+     </knowl>
+    </knowl>
+</knowl>

@@ -22,8 +22,8 @@ Example of generating graphics.
         </outcome>
          <outcome>
             <title>RREF</title>
-            <slug>EX2</slug>
-            <path>outcomes/EX2</path>
+            <slug>SLO1</slug>
+            <path>outcomes/SLO1</path>
             <description>
 I can execute the next 2-3 steps of
   Gaussian elimination by hand that are needed to work toward RREF
