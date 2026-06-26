@@ -31,5 +31,13 @@ I can execute the next 2-3 steps of
   identify which row operations were used.
             </description>
         </outcome>
+         <outcome>
+            <title>Number of Solutions</title>
+            <slug>SLO2</slug>
+            <path>outcomes/SLO2</path>
+            <description>
+I can use information about pivots to make conclusions about the solutions of a system of linear equations, and explain the underlying reasoning (using appropriate terminology) regarding the existence and uniqueness of solutions and consistency or inconsistency of a system. 
+            </description>
+        </outcome>
     </outcomes>
 </bank>
