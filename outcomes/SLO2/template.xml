@@ -2,16 +2,18 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-Consider each of the following systems of linear equations
-or vector equations.
+Consider each of the following augmented matrices.For each matrix, (i) circle the pivot positions, (ii)
+  determine whether there is a solution to the system and, if so,
+  whether it is unique, and (iii) state whether the system is consistent
+  or not.  Explain your thinking for (ii) and (iii).
         </p>
     </intro>
     <!-- {{#systems}} -->
     <knowl>
         <intro>
-            <p><me>{{system}}</me></p>
+            <p><me>{{simplified_system}}</me></p>
         </intro>
-        <knowl>
+        <!-- <knowl>
             <content>   
                 <p>
 Explain and demonstrate how to find a simpler linear system
@@ -21,15 +23,15 @@ that has the same solution set.
             <outtro>
                 <p><me>{{simplified_system}}</me></p>
             </outtro>
-        </knowl>
-        <knowl>
+        </knowl> -->
+        <!-- <knowl>
             <content>   
                 <p>
 Explain whether this solution set
 has no solutions, one solution, or infinitely-many solutions.
 If the set is finite, describe it using set notation.
                 </p>
-            </content>
+            </content> -->
             <outtro>
                 <p>
 The solution set has {{count}}.
@@ -38,7 +40,7 @@ The solution set is <m>{{solset}}</m>.
 <!-- {{/solset}} -->
                 </p>
             </outtro>
-        </knowl>
+        <!-- </knowl> -->
     </knowl>
     <!-- {{/systems}} -->
 </knowl>

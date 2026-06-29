@@ -12,12 +12,14 @@ class Generator(BaseGenerator):
             vector(QQ, [randrange(1,4)*choice([-1,1]) for _ in range(3)])
         )
         constants = A*solution
-        m = A.augment(constants, subdivide=True)
-        if choice([True,False]):
-            system = CheckIt.latex_system_from_matrix(m)
-        else:
-            system = TBIL.VectorEquation(m)
-        simplified_system = CheckIt.latex_system_from_matrix(m.rref())
+        
+        m= A.augment(constants, subdivide=True)
+        system=m
+        # if choice([True,False]):
+        #     system = CheckIt.latex_system_from_matrix(m)
+        # else:
+        #     system = TBIL.VectorEquation(m)
+        simplified_system = m.rref()
         systems = [{
             "count": "one solution",
             "system": system,
@@ -41,11 +43,12 @@ class Generator(BaseGenerator):
             for p in range(2)
         ]))
         m = A.augment(lin_combo, subdivide=True)
-        if choice([True,False]):
-            system = CheckIt.latex_system_from_matrix(m)
-        else:
-            system = TBIL.VectorEquation(m)
-        simplified_system = CheckIt.latex_system_from_matrix(m.rref())
+        system=m
+        # if choice([True,False]):
+        #     system = CheckIt.latex_system_from_matrix(m)
+        # else:
+        #     system = TBIL.VectorEquation(m)
+        simplified_system = m.rref()
         systems += [{
             "count": "infinitely-many solutions",
             "system": system,
@@ -77,11 +80,12 @@ class Generator(BaseGenerator):
                 for _ in range(4)
             ])
         m = A.augment(column_matrix(non_lin_combo), subdivide=True)
-        if choice([True,False]):
-            system = CheckIt.latex_system_from_matrix(m)
-        else:
-            system = TBIL.VectorEquation(m)
-        simplified_system = CheckIt.latex_system_from_matrix(m.rref())
+        system=m
+        # if choice([True,False]):
+        #     system = CheckIt.latex_system_from_matrix(m)
+        # else:
+        #     system = TBIL.VectorEquation(m)
+        simplified_system = m.rref()
         systems += [{
             "count": "no solutions",
             "system": system,
