@@ -39,5 +39,13 @@ I can execute the next 2-3 steps of
 I can use information about pivots to make conclusions about the solutions of a system of linear equations, and explain the underlying reasoning (using appropriate terminology) regarding the existence and uniqueness of solutions and consistency or inconsistency of a system. 
             </description>
         </outcome>
+         <outcome>
+            <title>Linear Combinations</title>
+            <slug>SLO3</slug>
+            <path>outcomes/SLO3</path>
+            <description>
+I can determine if and how a given vector can be written as a linear combination of a given set of vectors and explain what this means geometrically.
+            </description>
+        </outcome>
     </outcomes>
 </bank>
