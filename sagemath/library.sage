@@ -595,7 +595,12 @@ class TBIL:
             self.rhs = rightside
         def _latex_(self):
             return latex(self.lhs)+"="+latex(self.rhs)
-
+    class Matrix_Equation(SageObject):
+            def __init__(self,leftside,rightside):
+                self.lhs = leftside
+                self.rhs = rightside
+            def _latex_(self):
+                return latex(self.lhs)+r"\vec{x} ="+latex(self.rhs)
     #Vector equation class
     class VectorEquation(Equation):
         def __init__(self,A,vars=None):

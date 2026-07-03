@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- {{#prompt}} -->
+
+        <!-- {{#sys}} -->
+            <intro>
+                <p> Consider the question:  is this linear system consistent? <me>{{system}}</me></p>
+            </intro>
+        <!-- {{/sys}} -->
+        <!-- {{#mat}} -->
+            <intro>
+                <p> Consider the question:is <m>b={{b}}</m> a linear combination of the vectors? <m>{{veclist}}</m> </p>
+            </intro> 
+        <!-- {{/mat}} -->
+        <!-- {{#vec}} -->
+            <intro>
+                <p> Consider the question:  Does the following matrix vector equation have a solution? <me>{{vectorequation}}</me></p>
+            </intro>
+        <!-- {{/vec}} -->
+
+        <!-- {{^sys}} -->
+            <knowl>
+                <content><p> Write an equivilent question about a system of linear equations.</p></content>
+                <outtro><p>is this linear system consistent? <me>{{system}}</me> </p></outtro>
+            </knowl>
+        <!-- {{/sys}} -->
+        <!-- {{^mat}} -->
+            <knowl>
+                <content><p> Write an equivilent question using the language of linear combinations . </p></content>
+                <outtro><p>is <m>b={{b}}</m> a linear combination of the vectors <m>{{veclist}}</m>?</p></outtro>
+            </knowl>
+        <!-- {{/mat}} -->
+        <!-- {{^vec}} -->
+            <knowl>
+                <content><p> Write an equivilent question about a matrix vector equation .</p></content>
+                <outtro><p>Does the following matrix vector equation have a solution? <me>{{vectorequation}}</me> </p></outtro>
+            </knowl>
+        <!-- {{/vec}} -->
+
+         <!--   <knowl>
+                <content><p> Write the corresponding coefficient matrix.</p></content>
+                <outtro><p><me>{{coeffmatrix}}</me></p></outtro>
+            </knowl> --> 
+    <!-- {{/prompt}} -->
+</knowl>

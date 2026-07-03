@@ -40,12 +40,13 @@ I can use information about pivots to make conclusions about the solutions of a 
             </description>
         </outcome>
          <outcome>
-            <title>Linear Combinations</title>
-            <slug>SLO3</slug>
-            <path>outcomes/SLO3</path>
+            <title>Representing Linear System and linear Combinations</title>
+            <slug>SLO4</slug>
+            <path>outcomes/SLO4</path>
             <description>
-I can determine if and how a given vector can be written as a linear combination of a given set of vectors and explain what this means geometrically.
+I can represent a linear system in three different ways and be able to translate back and forth among the forms:  as Ax = b, as a question about linear combinations, and as a question about an augmented matrix 
             </description>
         </outcome>
+
     </outcomes>
 </bank>
