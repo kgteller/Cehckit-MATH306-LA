@@ -7,7 +7,7 @@
     <knowl>
         <knowl>
         <intro>
-             <p>is <m>b={{v}}</m> a linear combination of the vectors <m>{{veclist}}</m>.</p>
+             <p>is <m>b={{v}}</m> a linear combination of the vectors <m>{{veclist2}}</m>.</p>
         </intro>
             <outtro>
                 <p>

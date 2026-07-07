@@ -595,12 +595,44 @@ class TBIL:
             self.rhs = rightside
         def _latex_(self):
             return latex(self.lhs)+"="+latex(self.rhs)
+    #creates matrix equation in the form of Ax=b
     class Matrix_Equation(SageObject):
             def __init__(self,leftside,rightside):
                 self.lhs = leftside
                 self.rhs = rightside
             def _latex_(self):
                 return latex(self.lhs)+r"\vec{x} ="+latex(self.rhs)
+    #creates vectors with names upto  u v w y 
+    class Vector_Naming(SageObject):
+            def __init__(self, A):
+                latex.matrix_delimiters("[", "]")
+                self.vectors=[column_matrix(v) for v in A.columns()]
+                self.columns=A.ncols()
+                self.named_vectors=[r"\mathbf u",r"\mathbf v",r"\mathbf w",r"\mathbf y"]
+                self.last_vector=r"\mathbf b"
+            def _latex_(self):
+                string=""
+                for i in range(self.columns):
+                    ltxvec=latex(self.vectors[i])
+                    string+=self.named_vectors[i]+"="+ltxvec
+                #string+=self.last_vector+"="+latex(self.vectors[self.columns-1])
+                return string
+  #creates vectors with names upto  u v w y and the last vector is b
+    class Vector_Naming2(SageObject):
+            def __init__(self, A):
+                latex.matrix_delimiters("[", "]")
+                self.vectors=[column_matrix(v) for v in A.columns()]
+                self.columns=A.ncols()
+                self.named_vectors=[r"\mathbf u",r"\mathbf v",r"\mathbf w",r"\mathbf y"]
+                self.last_vector=r"\mathbf b"
+            def _latex_(self):
+                string=""
+                for i in range(self.columns):
+                    ltxvec=latex(self.vectors[i])
+                    string+=self.named_vectors[i]+"="+ltxvec
+                string+=self.last_vector+"="+latex(self.vectors[self.columns-1])
+                return string
+                    
     #Vector equation class
     class VectorEquation(Equation):
         def __init__(self,A,vars=None):

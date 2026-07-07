@@ -77,6 +77,7 @@ class Generator(BaseGenerator):
         return {
             "ls": ls,
             "veclist": TBIL.VectorList(A.columns()),
+            "veclist2": TBIL.Vector_Naming(A),
             "vectors": vectors,
             # "combovector": column_matrix(A.column(-1)),
             # "statement": choice([True,False]),
