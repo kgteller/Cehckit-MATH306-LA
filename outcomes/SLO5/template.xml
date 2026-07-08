@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <intro>
+            <p>
+    Consider the set of vectors  <me>{{veclist}}</me> 
+            </p>
+        </intro>
+        <knowl>
+            <content>
+                <p>
+                    is <m>\mathbf b</m> in the span of  <m>{{vecnames}}</m>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>
+      \mathrm{RREF}\, {{ans1a}} = {{ans1b}} 
+                    </m> 
+                </p>
+            </outtro>
+        </knowl>
+        <knowl>
+            <content>
+                <p>
+                    is <m>{{vecname}}</m> in the span of  <m>{{vecnames2}}</m>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>
+      \mathrm{RREF}\, {{ans2a}} = {{ans2b}} 
+                    </m> 
+                </p>
+            </outtro>
+        </knowl>
+         <knowl>
+            <content>
+                <p>
+                    Does <m>{{vecnames}}</m> span <m> \mathbb{R}^4</m>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                {{ans3}}
+                </p>
+            </outtro>
+        </knowl>
+        
+        
+        
+    </knowl>
+</knowl>

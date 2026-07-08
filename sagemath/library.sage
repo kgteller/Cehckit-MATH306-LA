@@ -627,7 +627,7 @@ class TBIL:
                 self.last_vector=r"\mathbf b"
             def _latex_(self):
                 string=""
-                for i in range(self.columns):
+                for i in range(self.columns-1):
                     ltxvec=latex(self.vectors[i])
                     string+=self.named_vectors[i]+"="+ltxvec
                 string+=self.last_vector+"="+latex(self.vectors[self.columns-1])

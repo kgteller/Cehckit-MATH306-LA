@@ -55,6 +55,15 @@ I can determine if and how a given vector can be written as a linear combination
 I can represent a linear system in three different ways and be able to translate back and forth among the forms:  as Ax = b, as a question about linear combinations, and as a question about an augmented matrix 
             </description>
         </outcome>
+         <outcome>
+            <title>Span</title>
+            <slug>SLO5</slug>
+            <path>outcomes/SLO5</path>
+            <description>
+I can reformulate and answer questions about span in terms of linear combinations, matrix equations, and geometrically. 
+            </description>
+        </outcome>
+        
 
     </outcomes>
 </bank>
