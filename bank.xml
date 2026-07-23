@@ -4,7 +4,7 @@
     <slug>MATH 306 Linear Algebra</slug>
     <url>https://checkit.clontz.org</url>
     <outcomes>
-        <outcome>
+        <!-- <outcome>
             <title>Sample Outcome</title>
             <slug>EX1</slug>
             <path>outcomes/EX1</path>
@@ -19,7 +19,7 @@ Simplify the sum of two monomials.
             <description>
 Example of generating graphics.
             </description>
-        </outcome>
+        </outcome> -->
          <outcome>
             <title>RREF</title>
             <slug>SLO1</slug>
@@ -71,6 +71,13 @@ I can reformulate and answer questions about span in terms of linear combination
 I can reformulate and answer questions about linearly dependent or linearly independent vectors using appropriate computations, and explain the meaning of the results of computations in the language of linear combinations.
             </description>
         </outcome>
-
+  <outcome>
+            <title>Linear Tansformation Matrices</title>
+            <slug>SLO7</slug>
+            <path>outcomes/SLO7</path>
+            <description>
+I can find the matrix of a linear transformation using elementary vectors, apply a transformation to a vector or shape, and compose transformations using matrix multiplication. 
+            </description>
+        </outcome>
     </outcomes>
 </bank>
