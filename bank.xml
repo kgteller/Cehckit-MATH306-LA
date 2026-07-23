@@ -63,7 +63,14 @@ I can represent a linear system in three different ways and be able to translate
 I can reformulate and answer questions about span in terms of linear combinations, matrix equations, and geometrically. 
             </description>
         </outcome>
-        
+         <outcome>
+            <title>Linear Independence</title>
+            <slug>SLO6</slug>
+            <path>outcomes/SLO6</path>
+            <description>
+I can reformulate and answer questions about linearly dependent or linearly independent vectors using appropriate computations, and explain the meaning of the results of computations in the language of linear combinations.
+            </description>
+        </outcome>
 
     </outcomes>
 </bank>
