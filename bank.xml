@@ -79,5 +79,13 @@ I can reformulate and answer questions about linearly dependent or linearly inde
 I can find the matrix of a linear transformation using elementary vectors, apply a transformation to a vector or shape, and compose transformations using matrix multiplication. 
             </description>
         </outcome>
+        <outcome>
+            <title>Linear Tansformation Geometry</title>
+            <slug>SLO8</slug>
+            <path>outcomes/SLO8</path>
+            <description>
+I can describe the geometry of a matrix transformation in terms of rotation, scaling, and translation
+            </description>
+        </outcome>
     </outcomes>
 </bank>

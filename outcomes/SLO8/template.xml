@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+<!-- {{#tasks}} -->
+    <knowl>
+        <intro>
+            <p>
+   Let <m>T:\mathbb R^{{{2or3}}}\rightarrow\mathbb R^{{{2or3}}}</m> be the linear transformation given by
+          <me>
+                {{A}}
+          </me>  
+            </p>
+        </intro>
+        
+        
+        <knowl>
+            <content>
+                <p>
+                    Give a geometric discription for this transformation
+                </p>
+            </content>
+            <outtro>
+                <p>
+                        {{{ans}}}
+                </p>
+            </outtro>
+    </knowl>
+    </knowl>
+     <!-- <knowl>
+            <content>
+                <p>
+                    If <m>v={{v}}</m>, find <m>T(v)</m> and <m>S(v)</m>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>
+       T(v)={{Tv}} , S(v)={{Sv}}
+                    </m>
+                </p>
+            </outtro>
+    </knowl>
+
+     <knowl>
+            <content>
+                <p>
+                    determine the composition <m>({{composition}})(\mathbf w)</m> where <m>\mathbf w = {{w}}</m>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>
+       ({{composition}})(\mathbf w)={{comp}}
+                    </m>
+                </p>
+            </outtro>
+    </knowl> -->
+<!-- {{/tasks}} -->
+</knowl>
