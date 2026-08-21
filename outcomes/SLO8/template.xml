@@ -22,6 +22,9 @@
                 <p>
                         {{{ans}}}
                 </p>
+                <p>
+                    <m> {{op1}}{{op2}}{{#op3}}{{op3}}{{/op3}}={{A}}</m>
+                </p>
             </outtro>
     </knowl>
     </knowl>
