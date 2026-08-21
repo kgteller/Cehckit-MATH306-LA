@@ -43,10 +43,10 @@ class Generator(BaseGenerator):
             if sum(op2-S)==0:
                 string='Translated by '+latex(tx)+ ' units horizontally and '+latex(ty)+ ' units vetically, scaled by '+ latex(sx) + 'in the x direction and ' +latex(sy)+ 'in the y direction and, rotated by <m>'+latex(theta)+'</m>'  
             else:
-                string='Scaled by '+ latex(sx) + 'in the x direction and ' +latex(sy)+ 'in the y direction, translated by '+latex(tx)+ ' units horizontally and '+latex(ty)+ ' units vetically, and rotated by '+latex(theta)+'</m>'
+                string='Scaled by '+ latex(sx) + 'in the x direction and ' +latex(sy)+ 'in the y direction, translated by '+latex(tx)+ ' units horizontally and '+latex(ty)+ ' units vetically, and rotated by <m>'+latex(theta)+'</m>'
         elif sum(op1-T)==0:
             if sum(op2-S)==0:
-                string='Rotated by '+latex(theta)+', scaled by '+ latex(sx) + 'in the x direction and ' +latex(sy)+ 'in the y direction, and translated by '+latex(tx)+ ' units horizontally and '+latex(ty)+ ' units vetically'   
+                string='Rotated by <m>'+latex(theta)+'</m>, scaled by '+ latex(sx) + 'in the x direction and ' +latex(sy)+ 'in the y direction, and translated by '+latex(tx)+ ' units horizontally and '+latex(ty)+ ' units vetically'   
             else:
                 string='Scaled by '+ latex(sx) + 'in the x direction and ' +latex(sy)+ 'in the y direction, rotated by <m>'+latex(theta)+'</m>, and tanslated by '+latex(tx)+ ' units horizontally and '+latex(ty)+ ' units vetically'   
 
