@@ -50,5 +50,18 @@ a specific linear combination of <m>{{veclist}}</m> that equals <m>{{v}}</m>.
             </outtro>
         </knowl>
     </knowl>
-    <!-- {{/vectors}} -->
+  <!-- {{/vectors}} -->
+    <knowl>
+<intro>
+             <p>is <m>b</m> a linear combination of the vectors <m>v_1</m> and <m>v_2</m>.</p>
+
+             <p>
+                <image
+                    source="assets/SLO3/generated/{{__seed__}}/basis.png"
+                    description="Two basis vectors and a 3rd vector."/>
+             </p>
+        </intro>
+
+    </knowl>
+  
 </knowl>
