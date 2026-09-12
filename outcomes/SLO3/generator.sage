@@ -72,52 +72,73 @@ class Generator(BaseGenerator):
         ]
 
         shuffle(vectors)
+
         
-        v1 = vector([2, 1])
-        v2 = vector([-1, 2])
-        v3= 2*v1+3*v2
-
-        # Set the limits for the grid coefficients
-        min_val = -5
-        max_val = 5
-
-        # Create an empty Graphics object
-        g = Graphics()
-
-        # Plot the grid lines using linear combinations
-        for i in range(min_val, max_val + 1):
-            # Lines parallel to v2
-            start_pt1 = i * v1 + min_val * v2
-            end_pt1 = i * v1 + max_val * v2
-            g += line([start_pt1, end_pt1], color='lightgray', thickness=1)
-            
-            # Lines parallel to v1
-            start_pt2 = min_val * v1 + i * v2
-            end_pt2 = max_val * v1 + i * v2
-            g += line([start_pt2, end_pt2], color='lightgray', thickness=1)
-
-        # Plot the basis vectors as arrows from the origin (removed legend_label)
-        g += arrow([0,0], v1, color='red', width=2)
-        g += arrow([0,0], v2, color='blue', width=2)
-
-        # Add text labels slightly offset from the vector endpoints
-        # vertical_alignment and horizontal_alignment help keep text from overlapping the arrow
-        g += text("v1", v1 + vector([0.3, 0.3]), color='red', fontsize=12, horizontal_alignment='left')
-        g += text("v2", v2 + vector([-0.3, 0.3]), color='blue', fontsize=12, horizontal_alignment='right')
-
-        # Set plot aesthetics and display (ticks=[[], []] removes them)
-        g.set_axes_range(-10, 10, -10, 10)
-        g.show(aspect_ratio=1, title="Custom Basis Grid and Vectors", ticks=[[], []])
 
         return {
             "ls": ls,
             "veclist": TBIL.VectorList(A.columns()),
             "veclist2": TBIL.Vector_Naming(A),
             "vectors": vectors,
-            "basis":g,
             # "combovector": column_matrix(A.column(-1)),
             # "statement": choice([True,False]),
             # "matrix": A,
             # "rref": A.rref(),
             # "pivots": A.pivots(),
+        }
+
+    @provide_data
+    def graphics(data):
+        """
+        Variables generated above are available in the
+        data dictionary (see `data["lines"]` below). Graphics
+        take a long time to generate and take up a lot of
+        space on the disk, so consider carefully if they are necessary.
+
+        This should return a dictionary of the form
+        `{filename_string: graphics_object}` which will each produce
+        `f"{filename_string}.png}"`.
+        """
+        # Define your basis vectors in R2
+        v1 = vector([choice([-1,1])*randrange(1,2), choice([-1,1])*randrange(1,3)])
+        v2 = vector([choice([-1,1])*randrange(1,3), randrange(1,3)])
+        dproduct=(v1/v1.norm())*(v2/v2.norm()).n()
+        while abs(dproduct.n())>.5:
+            v1 = vector([choice([-1,1])*randrange(1,2), choice([-1,1])*randrange(1,3)])
+            v2 = vector([choice([-1,1])*randrange(1,3), randrange(1,3)])
+            dproduct=(v1/v1.norm())*(v2/v2.norm()).n() 
+        v3 = choice([-1,1])*randrange(1,4)*v1-choice([-1,1])*randrange(1,4)*v2
+            
+        # Define grid range constraints
+        grid_min, grid_max = -30, 30
+
+        # Generate lines parallel to v2, shifting along v1
+        grid_v1 = sum(plot(line([i*v1 + grid_min*v2, i*v1 + grid_max*v2], color='lightblue', thickness=1)) 
+                    for i in range(grid_min, grid_max + 1))
+
+        # Generate lines parallel to v1, shifting along v2
+        grid_v2 = sum(plot(line([grid_min*v1 + j*v2, grid_max*v1 + j*v2], color='lightblue', thickness=1)) 
+                    for j in range(grid_min, grid_max + 1))
+
+
+        # Plot the basis vectors using the plot command wrapper for arrows
+        arrow1 = plot(arrow((0,0), v1, color='black', width=2, arrowsize=3))
+        arrow2 = plot(arrow((0,0), v2, color='black', width=2, arrowsize=3))
+        arrow3 = plot(arrow((0,0), v3, color='black', width=2, arrowsize=3))
+
+        # Add text labels positioned slightly past the tip of each vector (multiplied by 1.15)
+        label1 = plot(text("v1", 1.15 * v1, color='black', fontsize=12, fontweight='bold'))
+        label2 = plot(text("v2", 1.15 * v2, color='black', fontsize=12, fontweight='bold'))
+        label3=  plot(text("b", 1.15 * v3, color='black', fontsize=12, fontweight='bold'))
+
+        # Combine all elements
+        final_plot = grid_v1 + grid_v2 + arrow1 + arrow2+ arrow3+label1 + label2 + label3
+
+        # Calculate the exact outer corners of your grid to dynamically set limits
+
+        n_max=round(max(v1.norm(),v2.norm(),v3.norm()))
+        final_plot.set_axes_range(-2*n_max,2*n_max,-2*n_max,2*n_max)
+        final_plot.show()
+        return {
+            "basis": final_plot,
         }

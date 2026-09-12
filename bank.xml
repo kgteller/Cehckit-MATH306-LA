@@ -95,13 +95,5 @@ I can describe the geometry of a matrix transformation in terms of rotation, sca
  can determine if a matrix is invertible, find an inverse, and use inverses to solve matrix equations. 
             </description>
         </outcome>
-         <outcome>
-            <title>IMage test</title>
-            <slug>IMG1</slug>
-            <path>outcomes/IMG1</path>
-            <description>
-                THis is a test of images 
-            </description>
-        </outcome>
     </outcomes>
 </bank>

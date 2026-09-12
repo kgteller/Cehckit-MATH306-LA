@@ -37,7 +37,11 @@ class Generator(BaseGenerator):
         `{filename_string: graphics_object}` which will each produce
         `f"{filename_string}.png}"`.
         """
+        plot1=plot(data["findfunction_line"]["line"])
+        plot2=plot(data["todraw_line"]["line"])
+        plot_final=plot1+plot2
+        plot_final.set_axes_range(-10, 10, -10, 10)
         return {
-            "find": plot(data["findfunction_line"]["line"]),
+            "find": plot_final,
             "draw": plot(data["todraw_line"]["line"]),
         }
