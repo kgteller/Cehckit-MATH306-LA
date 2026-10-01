@@ -111,5 +111,13 @@ I can determine whether or not a set of vectors is a basis for <m>\mathbb{R}^n</
 I can convert a vector given in the standard basis into a vector in another basis and vice versa.
             </description>
         </outcome>
+        <outcome>
+            <title>Determinants</title>
+            <slug>SLO12</slug>
+            <path>outcomes/SLO12</path>
+            <description>
+I can find the determinant of a given matrix using cofactor expansion and explain what information this tells us about the invertibility of a matrix.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

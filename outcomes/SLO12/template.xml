@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <content>
+            <p>
+Use a co-factor expansion to find the determinant of  <me>{{matrix}}</me>.
+            </p>
+        </content>
+        <outtro>
+            <p><m>\det(A)={{det}}</m></p>
+        </outtro>
+    </knowl>
+
+<knowl>
+        <content>
+            <p>
+for what values of k if any is A invertible
+            </p>
+        </content>
+        <outtro>
+            <p><m>k \neq {{sln}}</m></p>
+        </outtro>
+    </knowl>
+
+
+
+
+</knowl>
