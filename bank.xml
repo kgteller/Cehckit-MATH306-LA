@@ -103,5 +103,13 @@ I can describe the geometry of a matrix transformation in terms of rotation, sca
 I can determine whether or not a set of vectors is a basis for <m>\mathbb{R}^n</m>, and give examples and non-examples of bases. 
             </description>
         </outcome>
+        <outcome>
+            <title>Basis Conversion</title>
+            <slug>SLO11</slug>
+            <path>outcomes/SLO11</path>
+            <description>
+I can convert a vector given in the standard basis into a vector in another basis and vice versa.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

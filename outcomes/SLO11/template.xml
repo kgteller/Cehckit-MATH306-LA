@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Let <m>\vec{v}= {{v}}</m> and <m>\mathcal B=\{\vec b_1,\vec b_2,\vec b_3\,\vec b_4\}</m>
+where <m>\vec b_1 = {{b_1}}</m>, <m>\vec b_2= {{b_2}}</m>, <m>\vec b_3 = {{b_3}}</m>, and <m>\vec b_4 = {{b_4}}</m>..
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate how to verify that <m>\mathcal{B}</m> is a basis of <m>\mathbb R^4</m>
+and how to calculate <m>P_\mathcal{B}</m>, the change-of-basis matrix from the standard basis of
+<m>\mathbb R^4</m> to <m>\mathcal{B}</m>.
+            </p>
+        </content>
+        <outtro>
+            <p><m>P_{\mathcal B} = {{M_B}}</m></p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate how to use <m>P_\mathcal{B}</m> to express <m>\vec{v}</m> in the new coordinate system <m>\{\vec{v}\}_{\mathcal{B}}</m>. 
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\vec v = {{lin_combo_exp}}</m>
+            </p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+Explain and demonstrate how to find <m>\vec{y}</m>  if {<m>y</m>}<m>_{\mathcal{B}}={{y_b}}</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+                <m>\vec y = {{y}}</m>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>
