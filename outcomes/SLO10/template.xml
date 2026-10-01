@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <intro>
+            <p>
+    Consider the set of vectors <me>{{vecset}}</me>
+            </p>
+        </intro>
+        
+        <knowl>
+            <content>
+                <p>
+    does the set of vectors <m>{{vn1}}</m> form a basis for <m>\mathbb R^3</m>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>
+        \mathrm{RREF}\, {{vb1}} = {{vb1rref}}
+                    </m>
+                </p>
+                <p>
+        the set of vectors {{b1}} for <m>\mathbb R^3</m>.
+                </p>
+            </outtro>
+        </knowl>
+
+         <knowl>
+            <content>
+                <p>
+    does the set of vectors <m>{{vn2}}</m> form a basis for <m>\mathbb R^3</m>
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>
+        \mathrm{RREF}\, {{vb2}} = {{vb2rref}}
+                    </m>
+                </p>
+                <p>
+        the set of vectors {{b2}} for <m>\mathbb R^3</m>.
+                </p>
+            </outtro>
+        </knowl>
+    </knowl>
+</knowl>

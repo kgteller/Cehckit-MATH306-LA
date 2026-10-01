@@ -632,6 +632,24 @@ class TBIL:
                     string+=self.named_vectors[i]+"="+ltxvec
                 string+=self.last_vector+"="+latex(self.vectors[self.columns-1])
                 return string
+    #creates vectors with names upto  v1 to vn 
+    class Vector_Naming3(SageObject):
+            def __init__(self, A,vars=None):
+                latex.matrix_delimiters("[", "]")
+                self.vectors=[column_matrix(v) for v in A.columns()]
+                self.columns=A.ncols()
+                self.matrix=A
+                if not vars:
+                    self.vecs = [r"\mathbf v_"+str(i+1) for i in range(0,len(self.matrix.subdivision(0,0).columns()))]
+                self.named_vectors=[r"\mathbf u",r"\mathbf v",r"\mathbf w",r"\mathbf y"]
+                self.last_vector=r"\mathbf b"
+            def _latex_(self):
+                string=""
+                for i in range(self.columns):
+                    ltxvec=latex(self.vectors[i])
+                    string+=self.vecs[i]+"="+ltxvec
+                #string+=self.last_vector+"="+latex(self.vectors[self.columns-1])
+                return string
                     
     #Vector equation class
     class VectorEquation(Equation):

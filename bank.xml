@@ -40,7 +40,7 @@ I can use information about pivots to make conclusions about the solutions of a 
             </description>
         </outcome>
         <outcome>
-            <title>Representing Linear System and linear Combinations</title>
+            <title>Determining Linear Combinations</title>
             <slug>SLO3</slug>
             <path>outcomes/SLO3</path>
             <description>
@@ -88,11 +88,19 @@ I can describe the geometry of a matrix transformation in terms of rotation, sca
             </description>
         </outcome>
         <outcome>
-            <title>Invertability</title>
+            <title>Invertibility</title>
             <slug>SLO9</slug>
             <path>outcomes/SLO9</path>
             <description>
  can determine if a matrix is invertible, find an inverse, and use inverses to solve matrix equations. 
+            </description>
+        </outcome>
+        <outcome>
+            <title>Basis Identification</title>
+            <slug>SLO10</slug>
+            <path>outcomes/SLO10</path>
+            <description>
+I can determine whether or not a set of vectors is a basis for <m>\mathbb{R}^n</m>, and give examples and non-examples of bases. 
             </description>
         </outcome>
     </outcomes>
