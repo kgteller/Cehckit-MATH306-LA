@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+Consider the matrix  <me>{{A}} \sim {{Arref}}</me>.
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>
+find a basis for the column space <m>\text{COL}(A)</m>
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{col}}</m></p>
+        </outtro>
+ </knowl>
+
+ <knowl>
+        <content>
+            <p>
+find a basis for the Null space <m>\text{Nul}(A)</m>
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{null}}</m></p>
+        </outtro>
+ </knowl>
+
+ <knowl>
+        <content>
+            <p>
+Complete the sentences:
+            </p>
+            <p>
+<m>\text{COl}(A)</m> is a <m>\qquad</m> -dimenional subspace of <m>\mathbb R^p</m> where <m>p=</m>
+            </p>
+            <p>
+<m>\text{Nul}(A)</m> is a <m>\qquad</m>  -dimenional subspace of <m>\mathbb R^p</m> where <m>p=</m>
+            </p>
+        </content>
+        <outtro>
+            <p><m>\text{COl}(A)</m> is a {{cdim}}-dimenional subspace of <m>\mathbb R^p</m> where <m>p=4</m></p>
+
+            <p><m>\text{Nul}(A)</m> is a {{ndim}}-dimenional subspace of <m>\mathbb R^p</m> where <m>p=5</m></p>
+        </outtro>
+ </knowl>
+
+
+</knowl>
+</knowl>

@@ -116,7 +116,15 @@ I can convert a vector given in the standard basis into a vector in another basi
             <slug>SLO12</slug>
             <path>outcomes/SLO12</path>
             <description>
-I can find the determinant of a given matrix using cofactor expansion and explain what information this tells us about the invertibility of a matrix.
+        I can find the determinant of a given matrix using cofactor expansion and explain what information this tells us about the invertibility of a matrix.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Null and column Space</title>
+            <slug>SLO13</slug>
+            <path>outcomes/SLO13</path>
+            <description>
+        I can find and clearly justify  bases for the null space and the column space of a matrix (including why the set of vectors is a basis, i.e., why it  is  linearly independent and spans the relevant spaces) and thus their dimensions.
             </description>
         </outcome>
     </outcomes>
