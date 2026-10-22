@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+Consider the matrix  <me>{{matrix}} </me>.
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>
+For the vector <m>v_1={{ev1}}</m>, verify that it is an eignevector and find the associated eigen value
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{matrix}}{{ev1}}={{e1}}{{ev1}}</m></p>
+        </outtro>
+ </knowl>
+
+<knowl>
+        <content>
+            <p>
+For the vector <m>v_1={{ev2}}</m>, verify that it is an eignevector and find the associated eigen value
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{matrix}}{{ev2}}={{e2}}{{ev2}}</m></p>
+        </outtro>
+ </knowl>
+
+
+
+</knowl>
+</knowl>

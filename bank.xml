@@ -127,5 +127,13 @@ I can convert a vector given in the standard basis into a vector in another basi
         I can find and clearly justify  bases for the null space and the column space of a matrix (including why the set of vectors is a basis, i.e., why it  is  linearly independent and spans the relevant spaces) and thus their dimensions.
             </description>
         </outcome>
+        <outcome>
+            <title>Eigen Values</title>
+            <slug>SLO14</slug>
+            <path>outcomes/SLO14</path>
+            <description>
+        I can verify that a vector is an eigenvector algebraically and explain what this means about the vector geometrically. 
+            </description>
+        </outcome>
     </outcomes>
 </bank>
