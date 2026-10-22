@@ -26,7 +26,8 @@ Identify the eigenvalues of the matrix and a basis for each of the eignespaces
             </p>
         </content>
         <outtro>
-            <p><m>{{matrix}}{{ev2}}={{e2}}{{ev2}}</m></p>
+            <p><m>\lambda_1={{e1}} \qquad v_1={{ev1}}</m></p>
+            <p><m>\lambda_2={{e2}} \qquad v_2={{ev2}}</m></p>
         </outtro>
  </knowl>
 
