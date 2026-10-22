@@ -135,5 +135,14 @@ I can convert a vector given in the standard basis into a vector in another basi
         I can verify that a vector is an eigenvector algebraically and explain what this means about the vector geometrically. 
             </description>
         </outcome>
+         <outcome>
+            <title>Eigen Vectors</title>
+            <slug>SLO15</slug>
+            <path>outcomes/SLO15</path>
+            <description>
+        I can use the characteristic polynomial of a matrix A to identify its eigenvalues, and then find a basis of eigenvectors for each associated eigenspace and, if there is a basis of eigenvectors for 
+, use such a basis to describe the matrix product Ax.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+Consider the matrix  <me>{{matrix}} </me>.
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>
+Find the charachteritic polynomial of the matrix
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{charpoly}}</m></p>
+        </outtro>
+ </knowl>
+
+<knowl>
+        <content>
+            <p>
+Identify the eigenvalues of the matrix and a basis for each of the eignespaces
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{matrix}}{{ev2}}={{e2}}{{ev2}}</m></p>
+        </outtro>
+ </knowl>
+
+
+
+</knowl>
+</knowl>
