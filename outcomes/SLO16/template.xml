@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+Consider the matrix  <me>{{matrix}} </me>.
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>Determine whether <m>A</m> is diagonalizable.If it is, give the matrix <m>P</m> and the matrix <m>D</m> for the diagonalization. You must show your work.</p>
+        </content>
+        <outtro>
+            <p><m>D={{D}}</m></p>
+            <p><m>P={{P}}</m></p>
+
+        </outtro>
+ </knowl>
+</knowl>
+
+
+<knowl>
+        <intro>
+            <p>
+Suppose a matrix has eigen vectors <m>v_1={{v1}}</m> and <m>v_2={{v2}}</m> with corresponding eigenvalues <m>\lambda_1={{l1}}</m> and <m>\lambda_2={{l2}}</m>
+            </p>
+        </intro>
+
+    <knowl>
+        <content>
+            <p>
+                Write the vector <m>x={{x}}</m> as a linear combination of <m>v_1</m> and <m>v_2</m>
+            </p>
+
+        </content>
+
+
+        <outtro>
+            <p><m>x={{lincom1}}{{v1}}+{{lincom2}}{{v2}}</m></p>
+            
+        </outtro>
+
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+               Use the answer from the previous part to write <m>Ax</m> as a linear combination of <m>v_1</m> and <m>v_2</m>
+            </p>
+
+        </content>
+
+
+        <outtro>
+            <p><m>Ax={{lincom1}}{{l1}}{{v1}}+{{lincom2}}{{l2}}{{v2}}</m></p>
+            
+        </outtro>
+
+    </knowl>
+
+
+ <knowl>
+        <content>
+            <p>
+               Use the answer from the previous part to write <m>A^{{{pwr}}}x</m> as a linear combination of <m>v_1</m> and <m>v_2</m>
+            </p>
+
+        </content>
+
+
+        <outtro>
+            <p><m>Ax={{lincom1}}{{{l1}}}^{{pwr}}{{v1}}+{{lincom2}}{{{l2}}}^{{pwr}}{{v2}}</m></p>
+            
+        </outtro>
+
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+               What does <m>A^{k}</m> approach as <m>k</m> gets really large?
+            </p>
+
+        </content>
+
+
+        <outtro>
+            <p><m>Ax={{lincom1}}{{l1}}^{k}{{v1}}+{{lincom2}}{{l2}}^{k}{{v2}}=</m></p>
+            
+        </outtro>
+
+    </knowl>
+ </knowl>
+
+
+</knowl>

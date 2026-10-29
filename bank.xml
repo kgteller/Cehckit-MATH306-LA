@@ -144,5 +144,13 @@ I can convert a vector given in the standard basis into a vector in another basi
 , use such a basis to describe the matrix product Ax.
             </description>
         </outcome>
+        <outcome>
+            <title>Diagonalization</title>
+            <slug>SLO16</slug>
+            <path>outcomes/SLO16</path>
+            <description>
+        I can use Eigenvalues and Eigenvectors to find the Diagonalization of a matrix as well as from powers of a matrix
+            </description>
+        </outcome>
     </outcomes>
 </bank>
