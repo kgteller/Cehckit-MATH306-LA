@@ -152,5 +152,13 @@ I can convert a vector given in the standard basis into a vector in another basi
         I can use Eigenvalues and Eigenvectors to find the Diagonalization of a matrix as well as from powers of a matrix
             </description>
         </outcome>
+         <outcome>
+            <title>Dor Product</title>
+            <slug>SLO17</slug>
+            <path>outcomes/SLO17</path>
+            <description>
+        I can find the dot product of two vectors, use the dot product to determine geometric information about vectors, and apply the distributive property of the dot product.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

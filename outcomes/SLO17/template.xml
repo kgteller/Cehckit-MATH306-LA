@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+Consider the vectors  <m>\mathbf{v}={{v}} </m> and <m>\mathbf{w}={{w}}</m>.
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>Without using Sage, find the dot products <m>\mathbf{v}\cdot\mathbf{v}</m>,<m>\mathbf{v}\cdot\mathbf{w}</m>, and <m>\mathbf{w}\cdot\mathbf{w}</m>.</p>
+        </content>
+        <outtro>
+            <p><m>\mathbf{v}\cdot\mathbf{v}={{vv}}</m></p>
+            <p><m>\mathbf{v}\cdot\mathbf{w}={{vw}}</m></p>
+            <p><m>\mathbf{w}\cdot\mathbf{w}={{ww}}</m></p>
+
+        </outtro>
+ </knowl>
+
+ <knowl>
+        <content>
+            <p> Find the lengths <m>\left|\mathbf{v}\right|</m> and <m>\left|\mathbf{w}\right|</m> and the angle between <m>\mathbf{v}</m> and <m>\mathbf{v}</m>.</p>
+        </content>
+        <outtro>
+            <p><m>\left|\mathbf{v}\right|=\sqrt{{{vv}}}</m></p>
+            <p><m>\left|\mathbf{w}\right|=\sqrt{{{ww}}}</m></p>
+            <p><m>\theta=\arccos({{vw}}/({{vv}}*{{ww}}))={{theta}}</m></p>
+
+        </outtro>
+ </knowl>
+
+  <knowl>
+        <content>
+            <p> For what value of <m>t</m> is <m>\mathbf {{orthog}}</m> orthogonal to <m>t \mathbf {{orthog}} + {{k}}\mathbf {{other}}</m>?</p>
+        </content>
+        <outtro>
+            <p><m>t={{ans4}}</m></p>
+           
+
+        </outtro>
+ </knowl>
+</knowl>
+
+
+
+</knowl>
