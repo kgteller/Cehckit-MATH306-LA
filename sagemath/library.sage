@@ -680,3 +680,75 @@ class TBIL:
         for i in range(len(lst)):
             choices[i]["letter"] = chr(ord('a')+i)
         return choices
+    
+    @staticmethod
+    # Tries to create orthogonal columns under a threshold. Use in loop to find given matrix.
+    def primitive_orthogonal_Q(A, threshold=None):
+    # Compute unnormalized orthogonal rows of A^T
+        G, _ = A.transpose().gram_schmidt(orthonormal=False)
+    
+        int_cols = []
+        for row in G:
+            if row.is_zero():
+                continue
+            # Step 1: Clear rational denominators
+            d = lcm([x.denominator() for x in row])
+            int_vec = vector(ZZ, row * d)
+        
+            # Step 2: Reduce to smallest possible integers using GCD
+            g = gcd(int_vec)
+            int_vec = int_vec / g
+            
+            # Step 3: Check against threshold if provided
+            if threshold is not None and max(abs(x) for x in int_vec) > threshold:
+                return None  # Exceeds threshold
+                
+            int_cols.append(int_vec)
+        
+        return matrix(ZZ, int_cols).transpose()
+
+    @staticmethod
+    #finds an integer vecor not in the columnspace of a matrix
+    def vector_not_in_colspace(Q_int, threshold=None):
+        # Ensure Q_int does not span the entire ambient space
+        if Q_int.rank() == Q_int.nrows():
+            raise ValueError("Q_int spans the full space; no external vector exists.")
+        
+        # The left kernel of Q_int is orthogonal to its column space
+        L = Q_int.left_kernel()
+        
+        # Pick the first basis vector from the left kernel
+        v_rat = L.basis()[0]
+        
+        # Clear denominators and reduce by GCD for minimal integer entries
+        d = lcm([x.denominator() for x in v_rat])
+        v_int = vector(ZZ, v_rat * d)
+        v_int = v_int / gcd(v_int)
+        
+        if threshold is not None and max(abs(x) for x in v_int) > threshold:
+            return None
+            
+        return v_int
+    @staticmethod
+    def external_vector_nonzero_proj(Q_int, threshold=None):
+        if Q_int.rank() == Q_int.nrows():
+            raise ValueError("Q_int spans the full space; no external vector exists.")
+        
+        # 1. Get a small vector in the orthogonal complement (left kernel)
+        v_null = Q_int.left_kernel().basis()[0]
+        v_null = vector(ZZ, v_null * lcm([x.denominator() for x in v_null]))
+        v_null = v_null / gcd(v_null)
+        
+        # 2. Combine it with a column of Q_int (try +/- to keep entries small)
+        candidates = []
+        for col in Q_int.columns():
+            candidates.append(col + v_null)
+            candidates.append(col - v_null)
+            
+        # Pick the candidate with the smallest maximum entry
+        best_b = min(candidates, key=lambda v: max(abs(x) for x in v))
+        
+        if threshold is not None and max(abs(x) for x in best_b) > threshold:
+            return None
+            
+        return best_b

@@ -168,5 +168,14 @@ I can convert a vector given in the standard basis into a vector in another basi
          I can describe the orthogonal complement of a subspace of <m>\mathbb{R}^n</m>
             </description>
         </outcome>
+        <outcome>
+               <title>Orthogonal Projections</title>
+            <slug>SLO19</slug>
+            <path>outcomes/SLO19</path>
+            <description>
+         I can use the orthogonal projection formula, using either an orthogonal or an orthonormal basis, to find the orthogonal projection of a vector onto a subspace of 
+ <m>\mathbb{R}^n</m>
+            </description>
+        </outcome>
     </outcomes>
 </bank>

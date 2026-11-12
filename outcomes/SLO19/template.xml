@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+The following vectors form a basis for a {{dim}}-dimensional subspace of <m>V</m> in <m>\mathbb{R}^{{space}}</m>.
+<me>{{vecset}}</me>
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>Find the orthogonal projection of <m>b={{b}}</m> onto <m>V</m>. Make sure to justify your method</p>
+        </content>
+        <outtro>
+            <p><m>\hat{b}={{bhat}}</m></p>
+            
+        
+
+        </outtro>
+ </knowl>
+
+ 
+
+  <knowl>
+        <content>
+            <p> Find the matrix <m>P</m> such that <m>Pc=\hat{c}</m> is the orthognoal projection of c onto <m>V</m></p>
+        </content>
+        <outtro>
+            <p><m>P={{P}}</m></p>
+           
+
+        </outtro>
+ </knowl>
+</knowl>
+
+
+
+</knowl>
