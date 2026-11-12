@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+The following forms a basis for a {{dim}}-dimensional subspace of <m>V</m> in <m>\mathbb{R}^{{space}}</m>.
+<me>{{vecset}}</me>
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>find a description of the vectors in <m>V^\perp</m> </p>
+        </content>
+        <outtro>
+            <p><m>{{AT_null}}</m></p>
+            <p><m>{{Vec_null}}</m></p>
+        
+
+        </outtro>
+ </knowl>
+
+ 
+
+  <!-- <knowl>
+        <content>
+            <p> Suppose that <m>W</m>  is a {{}}-dimensional subpace or <m>\mathbb{R}^{{}}</m> wha tis the dimension of <m>W^\perp</m>?</p>
+        </content>
+        <outtro>
+            <p><m>t={{ans4}}</m></p>
+           
+
+        </outtro>
+ </knowl> -->
+</knowl>
+
+
+
+</knowl>

@@ -153,11 +153,19 @@ I can convert a vector given in the standard basis into a vector in another basi
             </description>
         </outcome>
          <outcome>
-            <title>Dor Product</title>
+            <title>Dot Product</title>
             <slug>SLO17</slug>
             <path>outcomes/SLO17</path>
             <description>
         I can find the dot product of two vectors, use the dot product to determine geometric information about vectors, and apply the distributive property of the dot product.
+            </description>
+        </outcome>
+         <outcome>
+            <title>Orthogonal Complement</title>
+            <slug>SLO18</slug>
+            <path>outcomes/SLO18</path>
+            <description>
+         I can describe the orthogonal complement of a subspace of <m>\mathbb{R}^n</m>
             </description>
         </outcome>
     </outcomes>
