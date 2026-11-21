@@ -80,7 +80,7 @@ Suppose a matrix has eigen vectors <m>v_1={{v1}}</m> and <m>v_2={{v2}}</m> with 
     <knowl>
         <content>
             <p>
-               What does <m>A^{k}</m> approach as <m>k</m> gets really large?
+               What does <m>A^{k}x</m> approach as <m>k</m> gets really large?
             </p>
 
         </content>

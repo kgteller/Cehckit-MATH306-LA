@@ -60,7 +60,7 @@ class Generator(BaseGenerator):
             vw=v*w
             vv=v*v
             ww=w*w
-            theta=N(arccos(vw/(vv*ww)))
+            theta=N(arccos(vw/(sqrt(vv)*sqrt(ww))))
             uv=randint(1,15)
             uw=randint(1,15)
             while uv == uw:

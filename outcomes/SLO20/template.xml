@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+
+<knowl>
+        <intro>
+            <p>
+Given the following vectors for a  subspace of <m>V</m> of <m>\mathbb{R}^{{space}}</m>.
+<me>{{vecset}}</me>
+            </p>
+        </intro>
+
+<knowl>
+        <content>
+            <p>apply the Gram-Schmidt orthogonalization algorithm to find an orthogonal basis
+                        of <m>V</m></p>
+        </content>
+        <outtro>
+            <p><m>{{basis}}</m></p>
+        
+        </outtro>
+ </knowl>
+
+ 
+
+  <knowl>
+        <content>
+            <p> if <m>A={{A}}</m>find a <m>QR</m> factorization of <m>A</m> using Gram-Schmidt orthogonalization.</p>
+        </content>
+        <outtro>
+            <p><m>Q={{Q}}</m></p>
+            <p><m>R={{R}}</m></p>
+           
+
+        </outtro>
+ </knowl>
+</knowl>
+
+
+
+</knowl>

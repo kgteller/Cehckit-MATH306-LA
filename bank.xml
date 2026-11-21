@@ -177,5 +177,13 @@ I can convert a vector given in the standard basis into a vector in another basi
  <m>\mathbb{R}^n</m>
             </description>
         </outcome>
+         <outcome>
+               <title>Orthogonal Basis and QR Factorization</title>
+            <slug>SLO20</slug>
+            <path>outcomes/SLO20</path>
+            <description>
+         I can apply the Gram-Schmidt algorithm to find an orthogonal basis for a subspace and to find a QR factorization of a matrix.
+            </description>
+        </outcome>
     </outcomes>
 </bank>

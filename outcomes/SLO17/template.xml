@@ -22,12 +22,12 @@ Consider the vectors  <m>\mathbf{v}={{v}} </m> and <m>\mathbf{w}={{w}}</m>.
 
  <knowl>
         <content>
-            <p> Find the lengths <m>\left|\mathbf{v}\right|</m> and <m>\left|\mathbf{w}\right|</m> and the angle between <m>\mathbf{v}</m> and <m>\mathbf{v}</m>.</p>
+            <p> Find the lengths <m>\left|\mathbf{v}\right|</m> and <m>\left|\mathbf{w}\right|</m> and the angle between <m>\mathbf{v}</m> and <m>\mathbf{w}</m>.</p>
         </content>
         <outtro>
             <p><m>\left|\mathbf{v}\right|=\sqrt{{{vv}}}</m></p>
             <p><m>\left|\mathbf{w}\right|=\sqrt{{{ww}}}</m></p>
-            <p><m>\theta=\arccos({{vw}}/({{vv}}*{{ww}}))={{theta}}</m></p>
+            <p><m>\theta=\arccos({{vw}}/(\sqrt{{{vv}}}*\sqrt{{{ww}}}))={{theta}}</m></p>
 
         </outtro>
  </knowl>
